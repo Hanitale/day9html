@@ -1,0 +1,25 @@
+{
+  "name": "day9html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanitale/day9html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanitale/day9html/issues"
+  },
+  "homepage": "https://github.com/Hanitale/day9html#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "open": "0.0.5",
+    "path": "^0.12.7",
+    "require": "^2.4.20"
+  }
+}

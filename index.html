@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>function surprise(){
+        alert('Hello'+ fullName);
+    }</script>
+    <title>myForm</title>
+</head>
+<body bgcolor="#ff8c00">
+
+    <h1 style="color:darkgreen">Hello how are you?</h1>
+    <form action="/form" method="get">
+    Full Name <input type = "text" name= "fullName"><br/>
+    Password <input type= "password" name= "pass"><br/><br/>
+    Country  <select name= "country">
+                <option id="China">China</option>
+                <option id="Israel">Israel</option>
+                <option id="England">England</option>
+                <option id="France">France</option>
+            </select>
+    <br/><br/>
+
+    <input type="radio" name="gender" id="male">
+    <label for="male">I am Male</label><br/>
+    <input type="radio" name="gender" id="female" checked>
+    <label for="female">I am Female</label><br/><br/>
+
+    <fieldset name="petPolicy" style="width: 100px; height: 50px; color: darkgreen" >
+        <legend>Pet Policy</legend>
+        <input type="checkbox" name="pets[]" checked>I have a dog<br/>
+        <input type="checkbox" name="pets[]">I have a cat<br/>
+    </fieldset>
+    <p id="aboutMe">
+        <textarea placeholder="A few words about me..." rows="10" cols="40" name="description"></textarea></p>
+
+    <input type="submit" value="Send Form">
+</form>
+    <input type="button" id="surprise" value="Surprise" onclick="">
+</body>
+</html>
