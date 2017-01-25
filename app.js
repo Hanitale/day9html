@@ -4,6 +4,7 @@ var open = require('open');
 var path = require('path');
 var cache = [];
 var error = 'gggg';
+var foo = 'foo';
 // viewed at http://localhost:8080
 
 app.get('/', function(req, res) {
@@ -15,7 +16,7 @@ app.get('/form', function(req, res) {
      for(var keys in req.query){
              if(!req.query[keys]){
                  console.log('error '+keys);
-                 error =req.query[keys];
+                 error = keys;
         } else{
       cache.push(req.query);
 
